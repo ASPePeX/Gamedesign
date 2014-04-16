@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Codegenerierungs-/Texttransformationsprotokoll">
+  <MessageClass Name="Message" Label="Meldung" Option="Informationsmeldungen anzeigen" />
+  <MessageClass Name="Warning" Label="Warnung" Option="Warnungen anzeigen" />
+  <MessageClass Name="Error" Label="Fehler" Option="Fehler anzeigen" />
+  <MessageClass Name="Property" Label="Eigenschaft" Option="Metadaten anzeigen" />
+  <MessageClass Name="Diagnostic" Label="Meldung" Option="Diagnosemeldungen anzeigen" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="High" Text="Die Codegenerierung oder Texttransformation wurde gestartet." />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Diagnostic" Text="Überschreiben = True" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Diagnostic" Text="ProjectPath = ..\ClassmodelLib\ClassmodelLib.csproj" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-04-17T01:12:48" Importance="Medium" Text="Die Textvorlagenbindung von Classmodel: 'ClassTemplate' wendet ClassTemplate.t4 an für: 'Classmodel::GameWorld' -  (Class), 'Classmodel::GameEntity' -  (Class), 'Classmodel::Player' -  (Class), 'Classmodel::Enemy' -  (Class), 'Classmodel::Item' -  (Class), 'Classmodel::Interactive' -  (Class), 'Classmodel::Actions' -  (Class), 'Classmodel::Weapon' -  (Class), 'Classmodel::Consumable' -  (Class), 'Classmodel::Armor' -  (Class) " />
+  <Message Timestamp="2014-04-17T01:12:53" Importance="Medium" Text="Projekt hinzugefügt: E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\ClassmodelLib.csproj" />
+  <Message Timestamp="2014-04-17T01:12:53" Importance="Medium" Text="'Classmodel::GameWorld' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\GameWorld.cs" />
+  <Message Timestamp="2014-04-17T01:12:53" Importance="Medium" Text="'Classmodel::GameEntity' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\GameEntity.cs" />
+  <Message Timestamp="2014-04-17T01:12:54" Importance="Medium" Text="'Classmodel::Player' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Player.cs" />
+  <Message Timestamp="2014-04-17T01:12:55" Importance="Medium" Text="'Classmodel::Enemy' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Enemy.cs" />
+  <Message Timestamp="2014-04-17T01:12:55" Importance="Medium" Text="'Classmodel::Item' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Item.cs" />
+  <Message Timestamp="2014-04-17T01:12:55" Importance="Medium" Text="'Classmodel::Interactive' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Interactive.cs" />
+  <Message Timestamp="2014-04-17T01:12:56" Importance="Medium" Text="'Classmodel::Actions' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Actions.cs" />
+  <Message Timestamp="2014-04-17T01:12:56" Importance="Medium" Text="'Classmodel::Weapon' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Weapon.cs" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Medium" Text="'Classmodel::Consumable' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Consumable.cs" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Medium" Text="'Classmodel::Armor' -  (Class) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\Armor.cs" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="Überschreiben = True" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="ProjectPath = ..\ClassmodelLib\ClassmodelLib.csproj" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Medium" Text="Die Textvorlagenbindung von Classmodel: 'EnumTemplate' wendet EnumTemplate.t4 an für: 'Classmodel::GameStates' -  (Enumeration) " />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Medium" Text="'Classmodel::GameStates' -  (Enumeration) : Erfolg (Datei erstellt) - E:\GitHub\Gamedesign\Classmodel\Classmodel\ClassmodelLib\GeneratedCode\GameStates.cs" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="Überschreiben = True" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="ProjectPath = ..\ClassmodelLib\ClassmodelLib.csproj" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Medium" Text="Die Textvorlagenbindung von Classmodel: 'StructTemplate' wendet StructTemplate.t4 an für: 'Classmodel::GameWorld' -  (Class), 'Classmodel::GameEntity' -  (Class), 'Classmodel::Player' -  (Class), 'Classmodel::Enemy' -  (Class), 'Classmodel::Item' -  (Class), 'Classmodel::Interactive' -  (Class), 'Classmodel::Actions' -  (Class), 'Classmodel::Weapon' -  (Class), 'Classmodel::Consumable' -  (Class), 'Classmodel::Armor' -  (Class) " />
+  <Message Timestamp="2014-04-17T01:12:57" Importance="Diagnostic" Text="'Classmodel::GameWorld' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::GameEntity' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Player' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Enemy' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Item' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Interactive' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Actions' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Weapon' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Consumable' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'Classmodel::Armor' -  (Class): Es wurde keine Datei erstellt, da die 'AppliesToElement'-Methode der Vorlage 'StructTemplate.t4' als 'false' ausgewertet wurde." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="Die Auswahl enthielt 7 Elemente, die an keine Vorlage gebunden sind." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'a046bb49-0623-4be5-b269-e4cde58a1590' -  (Generalization): keine gebundene Vorlage." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'bd2ba6be-4f1b-40a7-adea-a99aab72def7' -  (Generalization): keine gebundene Vorlage." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'14cf8ee5-3206-4547-932f-8b25b7c5d142' -  (Generalization): keine gebundene Vorlage." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'534f1864-1215-459f-a16d-f3079ea5b3ef' -  (Generalization): keine gebundene Vorlage." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'b915b792-cdf6-444c-a962-8e374a5d950e' -  (Generalization): keine gebundene Vorlage." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'3d76ab62-ab52-4516-846b-2d5a5f7ab414' -  (Generalization): keine gebundene Vorlage." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="Diagnostic" Text="'99a0acdc-83c2-4514-afff-e80d5d1b42a4' -  (Generalization): keine gebundene Vorlage." />
+  <Message Timestamp="2014-04-17T01:12:58" Importance="High" Text="Die Codegenerierung ist abgeschlossen. Fehler: 0. Warnungen: 0." />
+</Log>
