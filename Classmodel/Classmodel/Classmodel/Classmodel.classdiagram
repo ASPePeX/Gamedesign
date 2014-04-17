@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="871ff196-e4eb-404b-924f-c1e78dac7c40" name="Classmodel" linkedPackageId="8fa2f3a7-d421-4611-adbc-f47fee3e0b8e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="871ff196-e4eb-404b-924f-c1e78dac7c40" name="Classmodel" linkedPackageId="8fa2f3a7-d421-4611-adbc-f47fee3e0b8e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="f0698fe6-cde4-47e7-9cfb-92176df30fd1" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="34527e0e-e0fb-4e81-8d43-364438e6283c" />
@@ -552,6 +552,18 @@
             <elementDefinition Id="404c7b02-bca2-4ebb-902e-d1f0a653b72e" />
             <type_NamedElement>
               <referencedTypeMoniker Id="31fe4cd0-43cc-446f-bb66-6508b68b6310" LastKnownName="GameStates" />
+            </type_NamedElement>
+          </property>
+          <property Id="c898de3b-0f21-4580-8c02-2a800a42d9be" name="tileSet" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5d00adf-779e-468f-bc87-7a4c16645201" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d28e60a6-604e-4d89-85c4-129ad64e001b" LastKnownName="Matrix2x2&lt;Tile&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="234d14e7-399d-42a2-ad26-a3e57d611346" name="visibleSet" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6141bd95-e53e-4ed8-8db7-89d0eeed87a6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1eb58241-ab48-4cd9-ad2c-ec3ca362d17b" LastKnownName="Matrix2x2&lt;Integer&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -2957,6 +2969,27 @@
     <packageHasNamedElement>
       <referencedType Id="f5f59183-38b6-40d1-a8e3-b9cb8a7ee872" name="Armor" isAbstract="false" isLeaf="false" cachedFullName="Classmodel::Armor">
         <elementDefinition Id="000b206d-1080-42f4-9364-d800d1a7e877" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="42f6cdd4-7c38-421a-9840-18368d343f67" name="Tile" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="36106701-0237-4af0-a62f-055dc2516d1b" />
+        <generalsInternal>
+          <generalization Id="ba2a0258-52a2-48c3-aa40-3cd7abedd114" isSubstitutable="false">
+            <classMoniker Id="3163e300-61fb-4189-8596-a47fb6bbadeb" LastKnownName="GameEntity" />
+            <elementDefinition Id="2312a364-d945-4076-9ec0-5bf8676b71fe" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d28e60a6-604e-4d89-85c4-129ad64e001b" name="Matrix2x2&lt;Tile&gt;" isAbstract="false" isLeaf="false" cachedFullName="Matrix2x2&lt;Tile&gt;">
+        <elementDefinition Id="e7953b11-2274-4de7-a01b-744525a5240d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1eb58241-ab48-4cd9-ad2c-ec3ca362d17b" name="Matrix2x2&lt;Integer&gt;" isAbstract="false" isLeaf="false" cachedFullName="Matrix2x2&lt;Integer&gt;">
+        <elementDefinition Id="dac966d4-056a-4a1b-bf2e-62c80faeae73" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

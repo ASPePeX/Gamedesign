@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="501a4682-06e6-4cdb-9579-eb98203f6c19"
   name="Classmodel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -765,6 +765,43 @@
               <enumerationMoniker
                 Id="509153c1-afbf-45c7-8e99-076ec6729468"
                 LastKnownName="GameStates"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f5d00adf-779e-468f-bc87-7a4c16645201"
+            name="tileSet"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e7953b11-2274-4de7-a01b-744525a5240d"
+                LastKnownName="Matrix2x2&lt;Tile&gt;"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6141bd95-e53e-4ed8-8db7-89d0eeed87a6"
+            name="visibleSet"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dac966d4-056a-4a1b-bf2e-62c80faeae73"
+                LastKnownName="Matrix2x2&lt;Integer&gt;"
                 LastKnownLocation="Classmodel.uml" />
             </type_NamedElement>
           </property>
@@ -3837,6 +3874,35 @@
           </property>
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="36106701-0237-4af0-a62f-055dc2516d1b"
+        name="Tile"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2312a364-d945-4076-9ec0-5bf8676b71fe"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2ce2f526-706a-4ae1-ba92-a77b2521bea8"
+              LastKnownName="GameEntity"
+              LastKnownLocation="Classmodel.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e7953b11-2274-4de7-a01b-744525a5240d"
+        name="Matrix2x2&lt;Tile&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="dac966d4-056a-4a1b-bf2e-62c80faeae73"
+        name="Matrix2x2&lt;Integer&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
