@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="501a4682-06e6-4cdb-9579-eb98203f6c19"
   name="Classmodel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -802,6 +802,43 @@
               <undefinedTypeMoniker
                 Id="dac966d4-056a-4a1b-bf2e-62c80faeae73"
                 LastKnownName="Matrix2x2&lt;Integer&gt;"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="92efb27a-c0e0-4b0a-bbfd-00c1ab7706a6"
+            name="rQ"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b60dab64-5e9e-4a3c-8479-fd609060017e"
+                LastKnownName="ResultQueue"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e0f823a1-fc4c-4468-a1d4-af2c6c4270f9"
+            name="aQ"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="406279d6-7c32-45b4-a8a6-8c3c8f20fa64"
+                LastKnownName="actionQueue"
                 LastKnownLocation="Classmodel.uml" />
             </type_NamedElement>
           </property>
@@ -2449,7 +2486,7 @@
     <packageHasNamedElement>
       <class
         Id="18329950-dd54-4add-9ea1-1f88d85b2a7a"
-        name="Actions"
+        name="Action"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3892,6 +3929,26 @@
               LastKnownLocation="Classmodel.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="58bf233b-7852-4383-95df-a7b54a705fab"
+            name="traversable"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -3903,6 +3960,205 @@
       <undefinedType
         Id="dac966d4-056a-4a1b-bf2e-62c80faeae73"
         name="Matrix2x2&lt;Integer&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7df242c0-4a17-4413-bcab-c1823712dbcf"
+        name="ActionQueue"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="997378ec-81d9-4f51-a73b-f8b61ebbe60a"
+            name="actions"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="98689c3b-f80d-4c77-bdaa-e500a9c5343d"
+                LastKnownName="Array&lt;Action&gt;"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f0679cd4-e039-4ca6-9a8c-748e021700de"
+            name="addAction"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ae5c2001-204f-4735-9306-3c7b963d9f20"
+                  name="a"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="18329950-dd54-4add-9ea1-1f88d85b2a7a"
+                      LastKnownName="Action"
+                      LastKnownLocation="Classmodel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0a384986-c603-4adb-adae-211a02e46c77"
+            name="execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b60dab64-5e9e-4a3c-8479-fd609060017e"
+        name="ResultQueue"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b4ae549d-700b-45a2-b9be-11a9984b87c4"
+            name="results"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4dc461e3-db8b-4cb5-b79a-b3e3e92d4f06"
+                LastKnownName="Array&lt;Result&gt;"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7746137b-b622-4e53-b796-9a71d8d56960"
+            name="addResult"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3254b036-0ee2-4158-b457-6af10fe3e10d"
+                  name="r"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e60cde9b-dac5-4314-a204-597b1a68d229"
+                      LastKnownName="Result"
+                      LastKnownLocation="Classmodel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="974d472e-715b-4f8d-94c0-34ae2bd963d1"
+            name="execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="44ece45c-1329-431e-a743-f3e0a73909d1"
+        name="Classmodel::Action[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="98689c3b-f80d-4c77-bdaa-e500a9c5343d"
+        name="Array&lt;Action&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e60cde9b-dac5-4314-a204-597b1a68d229"
+        name="Result"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="76e28602-f8e0-4198-9ce4-827753af12a3"
+            name="affectedGameEntity"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="2ce2f526-706a-4ae1-ba92-a77b2521bea8"
+                LastKnownName="GameEntity"
+                LastKnownLocation="Classmodel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d6e3fe35-0878-4082-9463-54233da9d195"
+        name="(GUI &amp; Interaction)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c81c5261-ae49-4655-9400-c89135588e4b"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_0258.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a1cbc3b6-30a3-4f07-8979-176310223c97"
+        name="Array&lt;Results&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4dc461e3-db8b-4cb5-b79a-b3e3e92d4f06"
+        name="Array&lt;Result&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="406279d6-7c32-45b4-a8a6-8c3c8f20fa64"
+        name="actionQueue" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

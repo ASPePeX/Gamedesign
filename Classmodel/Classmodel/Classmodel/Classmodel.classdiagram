@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="871ff196-e4eb-404b-924f-c1e78dac7c40" name="Classmodel" linkedPackageId="8fa2f3a7-d421-4611-adbc-f47fee3e0b8e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="871ff196-e4eb-404b-924f-c1e78dac7c40" name="Classmodel" linkedPackageId="8fa2f3a7-d421-4611-adbc-f47fee3e0b8e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="f0698fe6-cde4-47e7-9cfb-92176df30fd1" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="34527e0e-e0fb-4e81-8d43-364438e6283c" />
@@ -564,6 +564,18 @@
             <elementDefinition Id="6141bd95-e53e-4ed8-8db7-89d0eeed87a6" />
             <type_NamedElement>
               <referencedTypeMoniker Id="1eb58241-ab48-4cd9-ad2c-ec3ca362d17b" LastKnownName="Matrix2x2&lt;Integer&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="6409919c-3aeb-4b06-832b-e67261bded85" name="rQ" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92efb27a-c0e0-4b0a-bbfd-00c1ab7706a6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dee34856-0b48-405c-b06c-86ea8c4e8f3c" LastKnownName="ResultQueue" />
+            </type_NamedElement>
+          </property>
+          <property Id="0383c08b-f0c7-4abd-82a6-f4d19b4d15aa" name="aQ" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e0f823a1-fc4c-4468-a1d4-af2c6c4270f9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9414e0a8-48b1-4a23-a845-40087c298f6e" LastKnownName="actionQueue" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1815,7 +1827,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ba6d79fd-8f56-4539-bc96-736e0cd7c997" name="Actions" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="ba6d79fd-8f56-4539-bc96-736e0cd7c997" name="Action" isAbstract="false" isLeaf="false" isActiveClass="false">
         <description>Gamelogic und Inputhandling</description>
         <appliedStereotypesInternal>
           <stereotypeInstance Id="d1c1d355-0716-4b79-abb6-35e5f6317ae9" name="class" profile="CSharpProfile">
@@ -2980,6 +2992,14 @@
             <elementDefinition Id="2312a364-d945-4076-9ec0-5bf8676b71fe" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="6c1cb23e-2041-42e5-bdde-5fa24fdf10b7" name="traversable" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="58bf233b-7852-4383-95df-a7b54a705fab" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="37a1181f-98b3-4842-90a5-3a1c5a78c9ff" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
@@ -2990,6 +3010,126 @@
     <packageHasNamedElement>
       <referencedType Id="1eb58241-ab48-4cd9-ad2c-ec3ca362d17b" name="Matrix2x2&lt;Integer&gt;" isAbstract="false" isLeaf="false" cachedFullName="Matrix2x2&lt;Integer&gt;">
         <elementDefinition Id="dac966d4-056a-4a1b-bf2e-62c80faeae73" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="37a1181f-98b3-4842-90a5-3a1c5a78c9ff" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ccafcd9-bbef-469e-8f75-f7ef8606de03" name="ActionQueue" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7df242c0-4a17-4413-bcab-c1823712dbcf" />
+        <ownedAttributesInternal>
+          <property Id="2425ea2e-7be0-41d3-b1ee-84c410f392d2" name="actions" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="997378ec-81d9-4f51-a73b-f8b61ebbe60a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="af339fd1-7f7d-4916-8f14-576c0043142d" LastKnownName="Array&lt;Action&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6baccf49-7947-4754-9319-93eb843aeebc" name="addAction" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f0679cd4-e039-4ca6-9a8c-748e021700de" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bb720f61-ce56-4518-a900-0ec2b8ae4fcd" name="a" direction="In" isUnique="false">
+                  <elementDefinition Id="ae5c2001-204f-4735-9306-3c7b963d9f20" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d24555f6-7909-4d4b-a2b3-e802529b8406" LastKnownName="Action" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="eafe6e92-e088-4fb5-bb03-927031bcb986" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a384986-c603-4adb-adae-211a02e46c77" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8a0987f4-c2c6-441b-98be-a82d410568f7" name="ResultQueue" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b60dab64-5e9e-4a3c-8479-fd609060017e" />
+        <ownedAttributesInternal>
+          <property Id="97ba50ad-5aab-49ab-8494-b11e8cbd45ad" name="results" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b4ae549d-700b-45a2-b9be-11a9984b87c4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e95ccd31-f908-4dea-9474-ca8ee1c2d8fd" LastKnownName="Array&lt;Result&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="687ce7dd-ac84-45ce-b3c2-1f8639f52b28" name="addResult" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7746137b-b622-4e53-b796-9a71d8d56960" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a3bb878-2d47-4a25-b199-6d600362529e" name="r" direction="In" isUnique="false">
+                  <elementDefinition Id="3254b036-0ee2-4158-b457-6af10fe3e10d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="540cc888-850a-449b-b777-cbc251fc4808" LastKnownName="Result" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b510379d-95ae-4062-a3d0-b784436e3629" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="974d472e-715b-4f8d-94c0-34ae2bd963d1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="af339fd1-7f7d-4916-8f14-576c0043142d" name="Array&lt;Action&gt;" isAbstract="false" isLeaf="false" cachedFullName="Array&lt;Action&gt;">
+        <elementDefinition Id="98689c3b-f80d-4c77-bdaa-e500a9c5343d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="849febe2-2c0f-4bb7-8972-17701c745f05" name="Result" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e60cde9b-dac5-4314-a204-597b1a68d229" />
+        <ownedAttributesInternal>
+          <property Id="f72815f8-3fdb-4443-ab4b-56ab98aee5cb" name="affectedGameEntity" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="76e28602-f8e0-4198-9ce4-827753af12a3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="39b47c0d-b617-437c-b74b-928c1934613d" LastKnownName="GameEntity" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="39b47c0d-b617-437c-b74b-928c1934613d" name="GameEntity" isAbstract="false" isLeaf="false" cachedFullName="Classmodel::GameEntity">
+        <elementDefinition Id="2ce2f526-706a-4ae1-ba92-a77b2521bea8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="92c55623-5414-44e3-9c6b-b3f7ded8fb22" name="(GUI &amp; Interaction)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d6e3fe35-0878-4082-9463-54233da9d195" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d24555f6-7909-4d4b-a2b3-e802529b8406" name="Action" isAbstract="false" isLeaf="false" cachedFullName="Classmodel::Action">
+        <elementDefinition Id="18329950-dd54-4add-9ea1-1f88d85b2a7a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e95ccd31-f908-4dea-9474-ca8ee1c2d8fd" name="Array&lt;Result&gt;" isAbstract="false" isLeaf="false" cachedFullName="Array&lt;Result&gt;">
+        <elementDefinition Id="4dc461e3-db8b-4cb5-b79a-b3e3e92d4f06" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="540cc888-850a-449b-b777-cbc251fc4808" name="Result" isAbstract="false" isLeaf="false" cachedFullName="Classmodel::Result">
+        <elementDefinition Id="e60cde9b-dac5-4314-a204-597b1a68d229" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dee34856-0b48-405c-b06c-86ea8c4e8f3c" name="ResultQueue" isAbstract="false" isLeaf="false" cachedFullName="Classmodel::ResultQueue">
+        <elementDefinition Id="b60dab64-5e9e-4a3c-8479-fd609060017e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9414e0a8-48b1-4a23-a845-40087c298f6e" name="actionQueue" isAbstract="false" isLeaf="false" cachedFullName="actionQueue">
+        <elementDefinition Id="406279d6-7c32-45b4-a8a6-8c3c8f20fa64" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
